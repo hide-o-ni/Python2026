@@ -201,7 +201,7 @@ print('2')
 for i in (('Got %s' %i) for i in range (10)):
     print (i)
 
-'''
+
 
 #
 keys = ('optimist','pessimist', 'troll')
@@ -213,4 +213,19 @@ fzip = dict (zip (keys, values))
 print(fzip)
 
 #
+'''
+
+#рекурсия
+def s (arr):
+    if arr == sum (arr):
+        return arr
+    summ = 0
+    for i in arr:
+        summ+= i
+    return summ
+
+arr = [1,6,5,4,7]
+print (s (arr))
+
+
     
